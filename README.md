@@ -26,6 +26,7 @@ O Sistema de Emissão de Exames é uma plataforma web voltada para unidades de s
 
 #### Banco de Dados
 #### Containerização e Deploy
+- **Docker** – Conteinerização do ambiente
 #### Segurança e Configurações
 #### Logs e Monitoramento
 #### DevOps e Organização
