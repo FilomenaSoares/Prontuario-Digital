@@ -35,20 +35,20 @@ O Sistema de Emissão de Exames é uma plataforma web voltada para unidades de s
 
   - Arquitetura de Software
   ```  
-parkcontrol/
+Prontuario-Digital/
 │
-├── apps/                        # Apps Django personalizados
+├── apps/                    # Apps Django personalizados
 │   ├── Teste/               # Teste
 │   ├── Teste/               # Teste
 │   ├── Teste/               # Teste
-│   └── core/                   # Classes e utilitários compartilhados
+│   └── core/                # Classes e utilitários compartilhados
 │
 ├── base_templates/             # Templates base reutilizáveis por todo o sistema
 ├── templates/                  # Templates globais e específicos
 ├── static/                     # Arquivos estáticos (CSS, JS, imagens)
 ├── staticfiles/                # Pasta de coleta do `collectstatic`
 │
-├── parkcontrol/                # Configurações do projeto Django
+├── Prontuario-Digital/         # Configurações do projeto Django
 │   ├── settings.py             # Configurações gerais e apps instalados
 │   ├── urls.py                 # URLs principais do projeto
 │   ├── wsgi.py                 # Gateway WSGI
