@@ -20,11 +20,13 @@ O Sistema de Emissão de Exames é uma plataforma web voltada para unidades de s
 ## Tecnologias Utilizadas
 
 #### Linguagens e Frameworks
-- **Backend**: Python 3.11
+- **Backend**: Python 3.13
 - **Framework Web**: Django
 - **Frontend**: HTML5, CSS3, Bootstrap 5
 
 #### Banco de Dados
+- **PostgreSQL**
+
 #### Containerização e Deploy
 - **Docker** – Conteinerização do ambiente
 #### Segurança e Configurações
