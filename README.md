@@ -25,6 +25,8 @@ O Sistema de Emissão de Exames é uma plataforma web voltada para unidades de s
 - **Frontend**: HTML5, CSS3, Bootstrap 5
 
 #### Banco de Dados
+- **PostgreSQL**
+
 #### Containerização e Deploy
 - **Docker** – Conteinerização do ambiente
 #### Segurança e Configurações
