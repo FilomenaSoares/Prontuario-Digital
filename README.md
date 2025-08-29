@@ -72,3 +72,5 @@ Prontuario-Digital/
 ├── requirements.txt            # Dependências do projeto
 └── README.md                   # Este documento
 ````
+- docker build -t prontuario_digital .
+- docker run -p 8000:8000 prontuario_digital
