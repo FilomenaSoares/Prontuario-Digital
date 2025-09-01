@@ -24,7 +24,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = os.environ.get("DJANGO_SECRET_KEY")
 
 # Modificar para false quando entrar em produção
-DEBUG = os.environ.get("DEBUG", default=0) == "True"
+DEBUG = os.environ.get("DEBUG")
 
 ALLOWED_HOSTS = os.environ.get("DJANGO_ALLOWED_HOSTS", "localhost").split(" ")
 
@@ -75,9 +75,9 @@ WSGI_APPLICATION = 'prontuariodigital.wsgi.application'
 DATABASES = {
     "default": {
         "ENGINE": "django.db.backends.postgresql",
-            "POSTGRES_DB": os.environ.get("POSTGRES_DB"),
-            "POSTGRES_USER": os.environ.get("POSTGRES_USER"),
-            "POSTGRES_PASSWORD": os.environ.get("POSTGRES_PASSWORD"),
+            "DB_NAME": os.environ.get("DB_NAME"),
+            "DB_USER": os.environ.get("DB_USER"),
+            "DB_PASSWORD": os.environ.get("DB_PASSWORD"),
             "port": 5432,
         }
     }
