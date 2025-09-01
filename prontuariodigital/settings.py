@@ -26,7 +26,7 @@ SECRET_KEY = os.environ.get("SECRET_KEY")
 # Modificar para false quando entrar em produção
 DEBUG = True
 
-ALLOWED_HOSTS = ["www.parkcontrol.com.br", "parkcontrol.com.br", "localhost", "127.0.0.1", "web"]
+ALLOWED_HOSTS = ["www.prontuariodigital.com.br", "prontuariodigital.com.br", "localhost", "127.0.0.1", "web"]
 
 # Application definition
 
