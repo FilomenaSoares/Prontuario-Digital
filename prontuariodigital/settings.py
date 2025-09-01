@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/5.2/ref/settings/
 """
 import os
 from pathlib import Path
+from token import NAME
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -72,18 +73,14 @@ WSGI_APPLICATION = 'prontuariodigital.wsgi.application'
 # https://docs.djangoproject.com/en/5.2/ref/settings/#databases
 
 DATABASES = {
-     'default': {
-         'ENGINE': 'django.db.backends.{}'.format(
-             os.getenv('DATABASE_ENGINE', 'sqlite3')
-         ),
-         'NAME': os.getenv('DATABASE_NAME', 'polls'),
-         'USER': os.getenv('DATABASE_USERNAME', 'myprojectuser'),
-         'PASSWORD': os.getenv('DATABASE_PASSWORD', 'password'),
-         'HOST': os.getenv('DATABASE_HOST', '127.0.0.1'),
-         'PORT': os.getenv('DATABASE_PORT', 5432),
-     }
- }
-
+    "default": {
+        "ENGINE": "django.db.backends.postgresql",
+            "POSTGRES_DB": os.environ.get("POSTGRES_DB"),
+            "POSTGRES_USER": os.environ.get("POSTGRES_USER"),
+            "POSTGRES_PASSWORD": os.environ.get("POSTGRES_PASSWORD"),
+            "port": 5432,
+        }
+    }
 
 # Password validation
 # https://docs.djangoproject.com/en/5.2/ref/settings/#auth-password-validators

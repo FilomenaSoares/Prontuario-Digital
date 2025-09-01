@@ -1,5 +1,5 @@
 #Versão utilizada do python
-FROM python:3.13.0
+FROM python:3.13-slim 
 
 WORKDIR /usr/src/app
  
